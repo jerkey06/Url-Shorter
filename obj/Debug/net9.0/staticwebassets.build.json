@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "qL4D3fnrKuljMFrjzcvXouUoABnL3OcXQIq+9jsqLgo=",
+  "Source": "Urlshort",
+  "BasePath": "_content/Urlshort",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
