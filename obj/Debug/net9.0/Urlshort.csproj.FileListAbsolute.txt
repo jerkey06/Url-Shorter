@@ -156,3 +156,4 @@ C:\Users\ponce\RiderProjects\Urlshort\bin\Debug\net9.0\runtimes\win-x64\native\M
 C:\Users\ponce\RiderProjects\Urlshort\bin\Debug\net9.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\ponce\RiderProjects\Urlshort\bin\Debug\net9.0\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
 C:\Users\ponce\RiderProjects\Urlshort\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\ponce\RiderProjects\Urlshort\obj\Debug\net9.0\Urlshort.sourcelink.json
