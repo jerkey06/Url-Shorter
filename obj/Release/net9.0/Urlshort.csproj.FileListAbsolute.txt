@@ -1,0 +1,8 @@
+C:\Users\ponce\RiderProjects\Urlshort\obj\Release\net9.0\Urlshort.csproj.AssemblyReference.cache
+C:\Users\ponce\RiderProjects\Urlshort\obj\Release\net9.0\Urlshort.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ponce\RiderProjects\Urlshort\obj\Release\net9.0\Urlshort.AssemblyInfoInputs.cache
+C:\Users\ponce\RiderProjects\Urlshort\obj\Release\net9.0\Urlshort.AssemblyInfo.cs
+C:\Users\ponce\RiderProjects\Urlshort\obj\Release\net9.0\Urlshort.csproj.CoreCompileInputs.cache
+C:\Users\ponce\RiderProjects\Urlshort\obj\Release\net9.0\Urlshort.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ponce\RiderProjects\Urlshort\obj\Release\net9.0\Urlshort.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ponce\RiderProjects\Urlshort\obj\Release\net9.0\Urlshort.sourcelink.json

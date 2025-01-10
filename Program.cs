@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
+using Microsoft.Extensions.Caching.Distributed;
 using Urlshort.Models;
 using Microsoft.Extensions.Caching.StackExchangeRedis;
 
