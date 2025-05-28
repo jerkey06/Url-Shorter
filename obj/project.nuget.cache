@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RpR7CBMyVxU=",
+  "dgSpecHash": "HGDhUNf0pzM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ponce\\RiderProjects\\Urlshort\\Urlshort.csproj",
+  "projectFilePath": "C:\\Users\\ponce\\RiderProjects\\Url-Shorter\\Urlshort.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ponce\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\ponce\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

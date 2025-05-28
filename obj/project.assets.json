@@ -4675,11 +4675,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ponce\\RiderProjects\\Urlshort\\Urlshort.csproj",
+      "projectUniqueName": "C:\\Users\\ponce\\RiderProjects\\Url-Shorter\\Urlshort.csproj",
       "projectName": "Urlshort",
-      "projectPath": "C:\\Users\\ponce\\RiderProjects\\Urlshort\\Urlshort.csproj",
+      "projectPath": "C:\\Users\\ponce\\RiderProjects\\Url-Shorter\\Urlshort.csproj",
       "packagesPath": "C:\\Users\\ponce\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ponce\\RiderProjects\\Urlshort\\obj\\",
+      "outputPath": "C:\\Users\\ponce\\RiderProjects\\Url-Shorter\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4710,9 +4710,9 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "all"
+        "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net9.0": {
@@ -4772,7 +4772,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
