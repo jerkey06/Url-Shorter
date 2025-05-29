@@ -1,66 +1,129 @@
-# Url-Shorter
+# Url-Shorter - URL Shortening API
 
-## Overview
-Url-Shorter is a web application built with ASP.NET Core 9.0 that provides URL shortening services. The project leverages Entity Framework Core for data persistence and includes API documentation via Swagger.
+## Project Overview
 
-## Features
-- Shorten long URLs to compact, shareable links
-- Retrieve original URLs from shortened codes
-- API endpoints for URL management
-- Database migrations managed with Entity Framework Core
-- Environment-based configuration support
-- Integrated Swagger UI for API exploration
+**Url-Shorter** is a RESTful API built with **.NET 9** that offers efficient shortening and redirection for URLs. It supports creation, retrieval, and redirection of short URLs and includes Swagger documentation for easy API exploration.
 
-## Project Structure
-- `Program.cs`: Application entry point and configuration
-- `Models/`: Contains data transfer objects (DTOs) and URL management logic
-- `Migrations/`: Entity Framework Core migration files for database schema management
-- `Properties/launchSettings.json`: Local development launch profiles
-- `appsettings.json` & `appsettings.Development.json`: Application configuration files
-- `Urlshort.csproj`: Project file with dependencies and build configuration
+---
 
-## Getting Started
-### Prerequisites
-- [.NET 9.0 SDK](https://dotnet.microsoft.com/download/dotnet/9.0)
-- SQL Server (or compatible database, as configured in `appsettings.json`)
+## Technologies Used
 
-### Setup
-1. Clone the repository:
-   ```sh
-   git clone <repository-url>
-   cd Url-Shorter
-   ```
-2. Restore dependencies:
-   ```sh
-   dotnet restore
-   ```
-3. Apply database migrations:
-   ```sh
-   dotnet ef database update
-   ```
-4. Run the application:
-   ```sh
-   dotnet run
-   ```
-5. Access the Swagger UI at `https://localhost:<port>/swagger` for API documentation and testing.
+- .NET 9  
+- ASP.NET Core  
+- Entity Framework Core  
+- SQL Server  
+- Swagger/OpenAPI  
+
+---
+
+## Key Features
+
+- Shorten long URLs to short, shareable links  
+- Redirect to original URLs from short codes  
+- Retrieve all shortened URLs *(if implemented)*  
+- Database migrations with EF Core  
+- Configurable environments via appsettings  
+- Interactive API documentation via Swagger  
+
+---
+
+## Prerequisites
+
+- .NET 9 SDK  
+- SQL Server or compatible database  
+- Visual Studio 2022 or Visual Studio Code  
+
+---
+
+## Installation
+
+### Cloning the Repository
+
+```bash
+git clone <repository-url>
+cd Url-Shorter
+```
+
+### Restoring Dependencies
+
+```bash
+dotnet restore
+```
+
+### Applying Database Migrations
+
+```bash
+dotnet ef database update
+```
+
+### Running the Application
+
+```bash
+dotnet run
+```
+
+---
 
 ## API Endpoints
-- **POST /shorten**: Shorten a given URL
-- **GET /{shortCode}**: Redirect to the original URL
-- **GET /api/urls**: List all shortened URLs (if implemented)
 
-Refer to the Swagger UI for detailed request/response schemas.
+| Method | Endpoint         | Description                          |
+|--------|------------------|--------------------------------------|
+| POST   | `/shorten`       | Shortens a given URL                 |
+| GET    | `/{shortCode}`   | Redirects to the original URL        |
+| GET    | `/api/urls`      | Retrieves all shortened URLs *(opt)* |
+
+---
+
+## URL Model
+
+```csharp
+public class ShortUrl
+{
+    public int Id { get; set; }
+    public string OriginalUrl { get; set; }
+    public string ShortCode { get; set; }
+    public DateTime CreatedAt { get; set; }
+}
+```
+
+---
+
+## Swagger Access
+
+Once the application is running, navigate to:
+
+```
+https://localhost:<port>/swagger
+```
+
+to access the interactive API documentation.
+
+---
+
+## Project Structure
+
+- `Program.cs` – App entry point and service configuration  
+- `Models/` – Contains DTOs and URL logic  
+- `Migrations/` – EF Core database schema migrations  
+- `appsettings.json` – General configuration  
+- `appsettings.Development.json` – Development-specific settings  
+- `launchSettings.json` – Local run profiles  
+- `Urlshort.csproj` – Project build configuration  
+
+---
 
 ## API Usage Examples
 
 ### Shorten a URL
-**Request:**
+
 ```bash
 curl -X POST "https://localhost:<port>/shorten" -H "Content-Type: application/json" -d '{
   "originalUrl": "https://www.example.com"
 }'
 ```
+
 **Response:**
+
 ```json
 {
   "shortUrl": "https://localhost:<port>/abc123",
@@ -68,37 +131,47 @@ curl -X POST "https://localhost:<port>/shorten" -H "Content-Type: application/js
 }
 ```
 
+---
+
 ### Redirect to Original URL
-**Request:**
+
 ```bash
 curl -v "https://localhost:<port>/abc123"
 ```
-**Response:**
-HTTP 302 Redirect to https://www.example.com
 
-### List All Shortened URLs (if implemented)
-**Request:**
+**Response:** HTTP 302 Redirect to https://www.example.com
+
+---
+
+### List All Shortened URLs
+
 ```bash
 curl "https://localhost:<port>/api/urls"
 ```
+
 **Response:**
+
 ```json
 [
   {
     "shortUrl": "https://localhost:<port>/abc123",
     "originalUrl": "https://www.example.com"
-  },
-  // ...more entries
+  }
 ]
 ```
 
-## Configuration
-- Update `appsettings.json` and `appsettings.Development.json` for database connection strings and environment-specific settings.
+---
 
-## Development
-- Use the `Migrations/` folder to manage database schema changes with Entity Framework Core.
-- DTOs and business logic are located in the `Models/` directory.
+## Future Enhancements
+
+- Expiration dates for shortened URLs  
+- User authentication and rate limiting  
+- Click tracking and analytics  
+- Custom alias support  
+- UI for URL management  
+
+---
 
 ## Contact
-For questions or support, please contact the project maintainer.
 
+For questions or support, please contact the project maintainer.
