@@ -40,7 +40,7 @@
 ### Cloning the Repository
 
 ```bash
-git clone [<repository-url>](https://github.com/jerkey06/Url-Shorter)
+git clone https://github.com/jerkey06/Url-Shorter.git
 cd Url-Shorter
 ```
 
